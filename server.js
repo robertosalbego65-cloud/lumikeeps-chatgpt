@@ -130,7 +130,7 @@ function createLumiKeepsServer() {
     {
       title: "Find LumiKeeps Portrait",
       description:
-        "Find the most suitable LumiKeeps Etsy portrait listing for a customer's custom portrait or gift request.",
+        "Recommend the most suitable LumiKeeps personalized portrait for a customer's custom portrait or gift request. This tool provides recommendations only and does not facilitate purchases.",
       inputSchema: {
         query: z.string().min(2).describe("Customer request in Italian or English."),
         max_results: z.number().int().min(1).max(3).optional(),
@@ -145,7 +145,7 @@ function createLumiKeepsServer() {
     async ({ query, max_results }) => {
       const results = findBestListings(query, max_results ?? 3);
       const summary = results
-        .map((item, index) => `${index + 1}. ${item.title} — ${item.app_description} — Etsy: ${item.etsy_url}`)
+        .map((item, index) => `${index + 1}. ${item.title} — ${item.app_description}`)
         .join("\n");
 
       return {
@@ -155,13 +155,60 @@ function createLumiKeepsServer() {
             text: `Recommended LumiKeeps listings for: "${query}"\n\n${summary}`,
           },
         ],
-        structuredContent: { query, results },
+        structuredContent: {
+          query,
+          results: results.map(({ etsy_url, ...item }) => item),
+        },
       };
     }
   );
 
   return server;
 }
+
+
+const pageStyle = `
+body{font-family:Arial,Helvetica,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}
+h1,h2{line-height:1.25}.muted{color:#666}a{color:#2457d6}
+`;
+
+function htmlPage(title, body) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>${title}</title><style>${pageStyle}</style></head><body>${body}</body></html>`;
+}
+
+const privacyHtml = htmlPage("LumiKeeps Privacy Policy", `
+<h1>LumiKeeps Privacy Policy</h1>
+<p class="muted">Last updated: August 24, 2026</p>
+<p>LumiKeeps is a recommendation app that helps users identify suitable personalized portrait options from the LumiKeeps catalog.</p>
+<h2>Information processed</h2>
+<p>The app processes the text of a user's request only to match that request with relevant portrait options. LumiKeeps does not require users to create an account and does not request payment information through ChatGPT.</p>
+<h2>Storage</h2>
+<p>The LumiKeeps MCP application does not intentionally store conversation content or user requests in an application database. Technical infrastructure providers may process limited request metadata as necessary to operate and secure the service.</p>
+<h2>Third-party services</h2>
+<p>The service is accessed through OpenAI products and is hosted on Render. Those providers may process technical information under their own privacy policies. If a user independently visits Etsy, Etsy's own privacy practices apply.</p>
+<h2>Purchases</h2>
+<p>This app does not process purchases or payments inside ChatGPT.</p>
+<h2>Contact</h2>
+<p>For support or privacy questions, visit the <a href="https://www.etsy.com/shop/LumiKeeps">LumiKeeps Etsy shop</a> and use Etsy's seller messaging feature.</p>
+`);
+
+const termsHtml = htmlPage("LumiKeeps Terms of Service", `
+<h1>LumiKeeps Terms of Service</h1>
+<p class="muted">Last updated: August 24, 2026</p>
+<p>These terms govern use of the LumiKeeps recommendation app in ChatGPT.</p>
+<h2>Purpose</h2>
+<p>The app provides informational recommendations intended to help users identify personalized portrait options that may fit their stated preferences, occasion, subjects, or memorial needs.</p>
+<h2>No transaction in ChatGPT</h2>
+<p>The app does not sell, charge for, or process purchases inside ChatGPT. Any separate transaction a user independently chooses to make through Etsy is governed by the applicable Etsy listing and Etsy's policies.</p>
+<h2>Accuracy and availability</h2>
+<p>Recommendations are based on a limited catalog and the information supplied by the user. Product availability, descriptions, pricing and turnaround times may change and should be confirmed separately.</p>
+<h2>Acceptable use</h2>
+<p>Users may use the app only for lawful purposes and must not attempt to disrupt, abuse, or interfere with the service.</p>
+<h2>Contact</h2>
+<p>For questions, visit the <a href="https://www.etsy.com/shop/LumiKeeps">LumiKeeps Etsy shop</a> and use Etsy's seller messaging feature.</p>
+`);
 
 const port = Number(process.env.PORT ?? 8787);
 const MCP_PATH = "/mcp";
@@ -186,8 +233,18 @@ const httpServer = createServer(async (req, res) => {
   }
 
   if (req.method === "GET" && url.pathname === "/") {
-    res.writeHead(200, { "content-type": "text/plain; charset=utf-8" })
-      .end(`LumiKeeps MCP server — ${listings.length} listings loaded`);
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" })
+      .end(htmlPage("LumiKeeps", `<h1>LumiKeeps</h1><p>Personalized portrait recommendation service for ChatGPT.</p><p><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></p>`));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/privacy") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" }).end(privacyHtml);
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/terms") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" }).end(termsHtml);
     return;
   }
 
