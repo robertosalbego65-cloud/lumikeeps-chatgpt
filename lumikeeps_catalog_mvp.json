@@ -1,0 +1,321 @@
+{
+  "app": "LumiKeeps Finder",
+  "version": "2.0-curated-fallback",
+  "catalog_type": "curated_fallback_catalog",
+  "listing_count": 15,
+  "listings": [
+    {
+      "listing_id": "4530254378",
+      "title": "Custom Wedding Portrait",
+      "category": "Couple",
+      "etsy_url": "https://www.etsy.com/listing/4530254378/",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "wedding",
+        "anniversary",
+        "engagement"
+      ],
+      "keywords": [
+        "wedding portrait",
+        "couple portrait",
+        "anniversary gift",
+        "engagement gift"
+      ],
+      "app_description": "Ritratto personalizzato di coppia, ideale per matrimonio, fidanzamento o anniversario."
+    },
+    {
+      "listing_id": "4543303824",
+      "title": "Motorcycle Couple Portrait",
+      "category": "Couple",
+      "etsy_url": "https://www.etsy.com/listing/4543303824/",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "anniversary",
+        "valentine"
+      ],
+      "keywords": [
+        "motorcycle couple",
+        "biker couple",
+        "motorbike portrait",
+        "couple gift"
+      ],
+      "app_description": "Ritratto di coppia pensato per motociclisti e appassionati di moto."
+    },
+    {
+      "listing_id": "4543303264",
+      "title": "Car Lover Couple Portrait",
+      "category": "Couple",
+      "etsy_url": "https://www.etsy.com/listing/4543303264/",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "anniversary",
+        "valentine"
+      ],
+      "keywords": [
+        "car lover couple",
+        "car portrait",
+        "couple gift",
+        "automotive gift"
+      ],
+      "app_description": "Ritratto personalizzato per coppie appassionate di auto."
+    },
+    {
+      "listing_id": "4541357355",
+      "title": "Family + Pet Portrait",
+      "category": "Family",
+      "etsy_url": "https://www.etsy.com/listing/4541357355/",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "christmas",
+        "family gift"
+      ],
+      "keywords": [
+        "family pet portrait",
+        "fur family",
+        "family with dog",
+        "family with cat"
+      ],
+      "app_description": "Ritratto di famiglia con uno o più animali domestici."
+    },
+    {
+      "listing_id": "4551592416",
+      "title": "Family Portrait from Separate Photos",
+      "category": "Family",
+      "etsy_url": "https://www.etsy.com/listing/4551592416/",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "christmas",
+        "grandparents gift",
+        "family gift"
+      ],
+      "keywords": [
+        "family portrait separate photos",
+        "combine photos",
+        "grandparents portrait",
+        "family gift"
+      ],
+      "app_description": "Ritratto di famiglia creato unendo persone provenienti da fotografie diverse."
+    },
+    {
+      "listing_id": "4551581493",
+      "title": "Christmas Family Portrait from Separate Photos",
+      "category": "Family",
+      "etsy_url": "https://www.etsy.com/listing/4551581493/",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "christmas"
+      ],
+      "keywords": [
+        "christmas family portrait",
+        "separate photos",
+        "holiday family gift"
+      ],
+      "app_description": "Ritratto natalizio di famiglia realizzato anche da fotografie separate."
+    },
+    {
+      "listing_id": "4530235619",
+      "title": "Friend Portrait for BFFs",
+      "category": "Best Friends",
+      "etsy_url": "https://www.etsy.com/listing/4530235619/",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "friendship gift"
+      ],
+      "keywords": [
+        "best friend portrait",
+        "bff gift",
+        "friendship portrait"
+      ],
+      "app_description": "Ritratto personalizzato per migliori amici."
+    },
+    {
+      "listing_id": "4543319530",
+      "title": "Friendship Then and Now Portrait",
+      "category": "Best Friends",
+      "etsy_url": "https://www.etsy.com/listing/4543319530/",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "friendship anniversary"
+      ],
+      "keywords": [
+        "then and now",
+        "friendship memories",
+        "best friends years apart"
+      ],
+      "app_description": "Ritratto amicizia 'prima e adesso', pensato per confrontare due momenti della stessa amicizia."
+    },
+    {
+      "listing_id": "4543304851",
+      "title": "Long-Distance Friendship Portrait",
+      "category": "Best Friends",
+      "etsy_url": "https://www.etsy.com/listing/4543304851/",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "friendship gift"
+      ],
+      "keywords": [
+        "long distance friendship",
+        "best friend abroad",
+        "friendship gift"
+      ],
+      "app_description": "Ritratto per amici che vivono lontani o in Paesi diversi."
+    },
+    {
+      "listing_id": "4551591864",
+      "title": "Holiday Dog/Cat Portrait",
+      "category": "Pet",
+      "etsy_url": "https://www.etsy.com/listing/4551591864/",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": [
+        "christmas",
+        "holiday"
+      ],
+      "keywords": [
+        "holiday pet portrait",
+        "christmas dog portrait",
+        "christmas cat portrait"
+      ],
+      "app_description": "Ritratto festivo personalizzato per cane o gatto."
+    },
+    {
+      "listing_id": "4551583833",
+      "title": "Custom Pet Portrait",
+      "category": "Pet",
+      "etsy_url": "https://www.etsy.com/listing/4551583833/",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": [
+        "birthday",
+        "pet lover gift",
+        "general"
+      ],
+      "keywords": [
+        "custom pet portrait",
+        "dog portrait",
+        "cat portrait",
+        "pet gift"
+      ],
+      "app_description": "Ritratto digitale personalizzato di un animale domestico."
+    },
+    {
+      "listing_id": "4551577169",
+      "title": "Halloween Pet Portrait",
+      "category": "Pet",
+      "etsy_url": "https://www.etsy.com/listing/4551577169/",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": [
+        "halloween"
+      ],
+      "keywords": [
+        "halloween pet portrait",
+        "spooky dog",
+        "spooky cat"
+      ],
+      "app_description": "Ritratto di animale a tema Halloween."
+    },
+    {
+      "listing_id": "4525967234",
+      "title": "Rainbow Bridge Pet Memorial",
+      "category": "Memorial",
+      "etsy_url": "https://www.etsy.com/listing/4525967234/",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": true,
+      "occasion": [
+        "pet memorial",
+        "bereavement"
+      ],
+      "keywords": [
+        "rainbow bridge",
+        "pet memorial",
+        "dog memorial",
+        "cat memorial"
+      ],
+      "app_description": "Ritratto commemorativo per ricordare un animale scomparso."
+    },
+    {
+      "listing_id": "4551592680",
+      "title": "Family Memorial with Loved One",
+      "category": "Memorial",
+      "etsy_url": "https://www.etsy.com/listing/4551592680/",
+      "people": "family",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": true,
+      "occasion": [
+        "memorial",
+        "remembrance",
+        "family gift"
+      ],
+      "keywords": [
+        "family memorial portrait",
+        "loved one memorial",
+        "combine separate photos"
+      ],
+      "app_description": "Ritratto commemorativo che permette di riunire in un'unica immagine familiari da fotografie diverse."
+    },
+    {
+      "listing_id": "4551582055",
+      "title": "Christmas Memorial Portrait",
+      "category": "Memorial",
+      "etsy_url": "https://www.etsy.com/listing/4551582055/",
+      "people": "family",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": true,
+      "occasion": [
+        "christmas",
+        "memorial"
+      ],
+      "keywords": [
+        "christmas memorial portrait",
+        "holiday remembrance",
+        "family memorial"
+      ],
+      "app_description": "Ritratto commemorativo a tema natalizio."
+    }
+  ]
+}
