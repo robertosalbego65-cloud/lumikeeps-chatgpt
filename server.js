@@ -131,9 +131,7 @@ async function refreshCatalogFromEtsy() {
 function etsyConfigAvailable() {
   return Boolean(
     process.env.ETSY_KEYSTRING &&
-    process.env.ETSY_SHARED_SECRET &&
-    process.env.ETSY_ACCESS_TOKEN &&
-    process.env.ETSY_SHOP_ID
+    process.env.ETSY_SHARED_SECRET
   );
 }
 
@@ -517,4 +515,4 @@ if (etsyConfigAvailable()) {
     refreshCatalogFromEtsy,
     6 * 60 * 60 * 1000
   );
-} 
+}
