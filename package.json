@@ -1,0 +1,22 @@
+{
+  "name": "lumikeeps-chatgpt",
+  "version": "1.0.0",
+  "description": "LumiKeeps ChatGPT MCP server with live Etsy catalog sync",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check etsy-sync.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.7.5",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
