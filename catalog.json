@@ -1,0 +1,170 @@
+{
+  "version": "1.1",
+  "concepts": [
+    {
+      "concept": "Wedding Couple Portrait",
+      "category": "Couple",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["wedding", "anniversary", "engagement"],
+      "keywords": ["wedding", "couple", "anniversary", "engagement", "spouses"],
+      "summary": "A personalized couple portrait suited to weddings, engagements, and anniversaries."
+    },
+    {
+      "concept": "Motorcycle Couple Portrait",
+      "category": "Couple",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "anniversary", "valentine"],
+      "keywords": ["motorcycle", "biker", "motorbike", "couple"],
+      "summary": "A couple portrait concept for motorcycle enthusiasts."
+    },
+    {
+      "concept": "Car Lover Couple Portrait",
+      "category": "Couple",
+      "people": "couple",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "anniversary", "valentine"],
+      "keywords": ["car", "automotive", "car lover", "couple"],
+      "summary": "A personalized portrait concept for couples who love cars."
+    },
+    {
+      "concept": "Family and Pet Portrait",
+      "category": "Family",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "christmas", "family gift"],
+      "keywords": ["family", "pet", "dog", "cat", "children", "parents"],
+      "summary": "A family portrait concept that can include one or more pets."
+    },
+    {
+      "concept": "Family Portrait from Separate Photos",
+      "category": "Family",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "christmas", "grandparents", "family gift"],
+      "keywords": ["family", "separate photos", "combine photos", "grandparents", "children"],
+      "summary": "A family portrait concept designed to combine people from different reference photos."
+    },
+    {
+      "concept": "Christmas Family Portrait",
+      "category": "Family",
+      "people": "family",
+      "pets_allowed": true,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["christmas", "holiday"],
+      "keywords": ["christmas", "holiday", "family", "separate photos"],
+      "summary": "A festive family portrait concept that can also use separate reference photos."
+    },
+    {
+      "concept": "Best Friends Portrait",
+      "category": "Best Friends",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "friendship"],
+      "keywords": ["best friends", "bff", "friendship", "friends"],
+      "summary": "A personalized portrait concept for best friends."
+    },
+    {
+      "concept": "Friendship Then and Now Portrait",
+      "category": "Best Friends",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "friendship anniversary"],
+      "keywords": ["then and now", "friendship", "memories", "years apart"],
+      "summary": "A portrait concept comparing two meaningful moments in the same friendship."
+    },
+    {
+      "concept": "Long-Distance Friendship Portrait",
+      "category": "Best Friends",
+      "people": "friends",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": false,
+      "occasion": ["birthday", "friendship"],
+      "keywords": ["long distance", "friends abroad", "friendship"],
+      "summary": "A portrait concept for friends who live far apart or in different countries."
+    },
+    {
+      "concept": "Holiday Pet Portrait",
+      "category": "Pet",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": ["christmas", "holiday"],
+      "keywords": ["pet", "dog", "cat", "christmas", "holiday"],
+      "summary": "A festive portrait concept for a dog or cat."
+    },
+    {
+      "concept": "Pet Portrait",
+      "category": "Pet",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": ["birthday", "pet lover", "general"],
+      "keywords": ["pet", "dog", "cat", "animal"],
+      "summary": "A personalized portrait concept focused on a pet."
+    },
+    {
+      "concept": "Halloween Pet Portrait",
+      "category": "Pet",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": false,
+      "occasion": ["halloween"],
+      "keywords": ["halloween", "spooky", "pet", "dog", "cat"],
+      "summary": "A Halloween-themed pet portrait concept."
+    },
+    {
+      "concept": "Rainbow Bridge Pet Memorial",
+      "category": "Memorial",
+      "people": "none",
+      "pets_allowed": true,
+      "separate_photos": false,
+      "memorial": true,
+      "occasion": ["pet memorial", "remembrance"],
+      "keywords": ["rainbow bridge", "pet memorial", "remembrance", "dog", "cat"],
+      "summary": "A gentle memorial portrait concept for remembering a pet."
+    },
+    {
+      "concept": "Family Memorial Portrait",
+      "category": "Memorial",
+      "people": "family",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": true,
+      "occasion": ["memorial", "remembrance", "family"],
+      "keywords": ["family memorial", "loved one", "remembrance", "separate photos"],
+      "summary": "A respectful memorial portrait concept that can combine family members from separate photos."
+    },
+    {
+      "concept": "Christmas Memorial Portrait",
+      "category": "Memorial",
+      "people": "family",
+      "pets_allowed": false,
+      "separate_photos": true,
+      "memorial": true,
+      "occasion": ["christmas", "memorial", "remembrance"],
+      "keywords": ["christmas memorial", "holiday remembrance", "family memorial"],
+      "summary": "A respectful holiday memorial portrait concept."
+    }
+  ]
+}
